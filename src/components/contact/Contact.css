@@ -1,0 +1,151 @@
+.contact-section {
+    padding: 100px 100px;
+    background-color: var(--background-dark-2);
+}
+
+
+.contact-section h2{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+body.light-theme .contact-section{
+        background-color: var(--background-light-2);
+}
+
+.form-section {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : start;
+    gap            : 20px;
+}
+
+.form-section input {
+    width        : 500px;
+    border-radius: 2px;
+}
+
+.form-section textarea {
+    width        : 500px;
+    border-radius: 2px;
+    height       : 150px;
+}
+
+
+.form-section button {
+    padding         : 6px 16px;
+    border-radius   : 16px;
+    background-color: var(--gray);
+    border-color    : var(--gray);
+    color           : var(--blue);
+}
+
+.form-section button:hover {
+    background-color: var(--blue);
+    border-color    : var(--gray);
+    color           : var(--gray);
+}
+
+body.light-theme .form-section button {
+    background-color: var(--text-light-1);
+    border-color    : var(--text-light-1);
+    color           : var(--background-light-1);
+}
+
+body.light-theme .form-section button:hover {
+    background-color: var(--background-light-2);
+    border-color    : var(--text-light-1);
+    color           : var(--text-light-2);
+}
+
+
+.contact-social {
+    display: flex;
+    align-items: center;
+    gap    : 20px;
+}
+
+.text-border-contact {
+    color: white;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    font-size: 40px;
+}
+
+.text-bold-contact {
+    font-weight: bold;
+    font-size  : 40px;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.contact-email {
+    color: var(--text-dark-2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+body.light-theme .contact-email{
+    color: var(--text-light-2 );
+}
+
+.contact-email h5{
+    font-size: 30px;
+}
+
+@media(max-width: 767px) {
+
+    .contact-section {
+        padding: 10px 20px;
+        background-color: var(--background-dark-2);
+    }
+    .form-section input {
+        width        : 330px;
+        border-radius: 2px;
+    }
+
+    .form-section textarea {
+        width        : 330px;
+        border-radius: 2px;
+        height       : 150px;
+    }
+
+    .contact-social {
+        max-width: 350px;
+        gap      : 10px;
+    }
+
+    .form-section button {
+        font-size: 12px;
+    }
+
+    .contact-content{
+        margin-top: 50px;
+    }
+
+    .text-border-contact{
+        font-size: 30px;
+    }
+
+    .text-bold-contact{
+        font-size: 30px;
+    }
+
+    .contact-content p {
+        margin-top: 20px;
+    }
+
+    .contact-email h5{
+        font-size: 15px;
+    }
+}

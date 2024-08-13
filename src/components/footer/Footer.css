@@ -1,0 +1,15 @@
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.footer-section img {
+    height: 30px;
+}
+
+@media(max-width: 767px) {
+    .footer-section {
+        padding: 10px;
+    }
+}

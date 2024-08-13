@@ -1,0 +1,9 @@
+.theme-toggle{
+    display: none !important;
+}
+
+@media(max-width:767px){
+    .theme-toggle{
+        display: flex !important;
+    }
+}

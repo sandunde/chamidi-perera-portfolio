@@ -1,0 +1,89 @@
+.nav-section{
+    padding: 30px 100px;
+}
+
+.nav-logo img{
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-dark-1);
+}
+
+body.light-theme .navbar-nav .nav-link {
+    color: var(--text-light-1);
+}
+
+.line {
+    height      : 20px;
+    border      : 1px solid;
+    margin-right: 10px;
+}
+
+.navbar-section .nav-link {
+    margin-right: 24px;
+}
+
+.navbar-section .nav-link.active,
+.navbar-section .nav-link:focus,
+.navbar-section .nav-link:hover {
+    color: var(--light-gray);
+}
+
+body.light-theme .navbar-section .nav-link.active,
+body.light-theme .navbar-section .nav-link:focus,
+body.light-theme .navbar-section .nav-link:hover {
+    color: var(--text-light-2);
+}
+
+.navbar-section button {
+    padding         : 6px 16px;
+    border-radius   : 16px;
+    background-color: var(--gray);
+    border-color    : var(--gray);
+    color           : var(--blue);
+}
+
+.navbar-section button:hover {
+    background-color: var(--blue);
+    border-color    : var(--gray);
+    color           : var(--gray);
+}
+
+body.light-theme .navbar-section button {
+    background-color: var(--text-light-1);
+    border-color    : var(--text-light-1);
+    color           : var(--background-light-1);
+}
+
+body.light-theme .navbar-section button:hover {
+    background-color: var(--background-light-2);
+    border-color    : var(--text-light-1);
+    color           : var(--text-light-2);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+body.light-theme .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 767px) {
+    .nav-section{
+        padding: 30px 10px;
+    }
+
+    .navbar-section .nav-link {
+        margin-right: 0px;
+    }
+
+    .navbar-section button {
+        margin-top: 10px;
+    }
+
+    .line {
+        display: none;
+    }
+}
