@@ -13,19 +13,19 @@ const Hero = () => {
     <Container fluid="md" className="hero-section" id="hero">
       <Row className="hero-row">
         <Col md={3}  className="hero-img order-md-2 order-1">
-          <img src={darkTheme ? HeroImgDark : HeroImg} alt="me" />
+          <img src={darkTheme ? HeroImg : HeroImg} alt="me" />
         </Col>
         <Col md={9} className="hero-content order-md-1 order-2">
           <div>
             <h2>
-              Hi, I'm Chamidi Perera <span>👋</span>
+              Hi, I'm Akalanka Wihangana Daluwakgoda <span>👋</span>
             </h2>
             <p>
-              I'm a full stack developer (React.js & Node.js) with a focus on
+              I'm a full stack developer (React.js & Java) with a focus on
               creating (and occasionally designing) exceptional digital
               experiences that are fast, accessible, visually appealing, and
               responsive. Even though I have been creating web applications for
-              over 7 years, I still love it as if it was something new.
+              over 2 years, I still love it as if it was something new.
             </p>
           </div>
           <div>
@@ -46,10 +46,7 @@ const Hero = () => {
             <a href="#sasd">
               <Instagram size={"25px"} />
             </a>
-            <a href="#sag">
-              <Facebook size={"25px"} />
-            </a>
-            <a href="#satr">
+            <a href="mailto:akalankadaluwakgoda7@gmail.com">
               <Envelope size={"25px"} />
             </a>
           </div>

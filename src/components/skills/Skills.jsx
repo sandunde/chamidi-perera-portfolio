@@ -9,12 +9,12 @@ import Wordpress from "../../assets/Wordpress.png";
 import Mongo from "../../assets/mongodb.png";
 import Swift from "../../assets/swift.png";
 import Php from "../../assets/php.png";
-import Express from "../../assets/express.png";
-import ExpressDark from "../../assets/expressDark.png";
+import Node from "../../assets/node.png";
+import Python from "../../assets/python.png";
 import Typescript from "../../assets/typescript.png";
 import tensorflow from "../../assets/tensforflow.png";
 import Firebase from "../../assets/firebase.png"
-import Android from "../../assets/android.png"
+import Mysql from "../../assets/mysql.png"
 
 const Skills = () => {
   const { darkTheme } = useTheme();
@@ -24,12 +24,6 @@ const Skills = () => {
       <h2>Skills</h2>
       <h5>The skills, tools and technologies I am good at:</h5>
       <Row className="stack-row-1">
-        <Col>
-          <div className="stack">
-            <img src={Swift} alt="stack" />
-            <p>Swift UI</p>
-          </div>
-        </Col>
         <Col>
           <div className="stack">
             <img src={Js} alt="stack" />
@@ -56,16 +50,22 @@ const Skills = () => {
         </Col>
         <Col>
           <div className="stack">
-            <img src={Android} alt="stack" />
-            <p>Android Studio</p>
+            <img src={Java} alt="stack" />
+            <p>Java</p>
+          </div>
+        </Col>
+        <Col>
+          <div className="stack">
+            <img src={Php} alt="stack" />
+            <p>PHP</p>
           </div>
         </Col>
       </Row>
       <Row className="stack-row-2">
         <Col>
           <div className="stack">
-            <img src={Java} alt="stack" />
-            <p>Java</p>
+            <img src={Mysql} alt="stack" />
+            <p>MySQL</p>
           </div>
         </Col>
         <Col>
@@ -76,33 +76,26 @@ const Skills = () => {
         </Col>
         <Col>
           <div className="stack">
-            <img src={Php} alt="stack" />
-            <p>PHP</p>
-          </div>
-        </Col>
-        <Col>
-          {darkTheme ? (
-            <div className="stack">
-              <img src={Express} alt="stack" />
-              <p>MongoDB</p>
-            </div>
-          ) : (
-            <div className="stack">
-              <img src={ExpressDark} alt="stack" />
-              <p>MongoDB</p>
-            </div>
-          )}
-        </Col>
-        <Col>
-          <div className="stack">
             <img src={tensorflow} alt="stack" />
-            <p>MongoDB</p>
+            <p>Tensorflow</p>
           </div>
         </Col>
         <Col>
           <div className="stack">
             <img src={Firebase} alt="stack" />
             <p>Firebase</p>
+          </div>
+        </Col>
+        <Col>
+          <div className="stack">
+            <img src={Node} alt="stack" />
+            <p>Node</p>
+          </div>
+        </Col>
+        <Col>
+          <div className="stack">
+            <img src={Python} alt="stack" />
+            <p>Python</p>
           </div>
         </Col>
       </Row>

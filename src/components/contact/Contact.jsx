@@ -26,8 +26,8 @@ const Contact = () => {
   const form = useRef();
   const [successMessage, setSuccessMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const email = "chaminihansa@gmail.com";
-  const phone = "+94 77 932 6178"
+  const email = "akalankadaluwakgoda7@gmail.com";
+  const phone = "+94 72 111 8103"
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email).then(() => {
@@ -39,7 +39,7 @@ const Contact = () => {
 
   const copyPToClipboard = () => {
     navigator.clipboard.writeText(phone).then(() => {
-      alert('Phone nUMBER copied to clipboard');
+      alert('Phone number copied to clipboard');
     }).catch(err => {
       console.error('Failed to copy: ', err);
     });
@@ -124,9 +124,6 @@ const Contact = () => {
             <a href="#sasd">
               <Instagram size={"25px"} />
             </a>
-            <a href="#sag">
-              <Facebook size={"25px"} />
-            </a>
           </div>
             </div>
           </Form>
@@ -149,14 +146,14 @@ const Contact = () => {
           <div className="contact-email">
             <a className="contact-email" href="chaminihansa@gmail.com" style={{ textDecoration: "none" }}>
               <Envelope size={"25px"} className="responsive-icon" />
-              <h5>: chaminihansa@gmail.com</h5>
+              <h5>: akalankadaluwakgoda7@gmail.com</h5>
             </a>
             <Copy onClick={copyToClipboard} style={{ cursor: 'pointer' }} />
           </div>
           <div className="contact-email">
             <a className="contact-email" href="tel:+94779326178" style={{ textDecoration: "none" }}>
               <Telephone size={"25px"} className="responsive-icon" />
-              <h5>: +94 77 932 6178</h5>
+              <h5>: +94 72 111 8103</h5>
             </a>
             <Copy onClick={copyPToClipboard} style={{ cursor: 'pointer' }} />
           </div>

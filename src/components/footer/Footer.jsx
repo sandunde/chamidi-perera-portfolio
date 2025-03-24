@@ -7,12 +7,12 @@ import BLogo from "../../assets/blackLogo.png";
 import { useTheme } from "../../context/ThemeContext";
 
 const Footer = () => {
-    const { darkTheme, toggleTheme } = useTheme();
+  const { darkTheme, toggleTheme } = useTheme();
 
   return (
     <Container fluid className='footer-section'>
-        {darkTheme ? <img src={Logo} alt='logo' /> : <img src={BLogo} alt='logo' />}
-        <p> <CCircle /> 2024 | Coded with  ❤️ by Chamidi Perera</p>
+      {darkTheme ? <img src={Logo} alt='logo' /> : <img src={BLogo} alt='logo' />}
+      <p> <CCircle /> 2025 | Coded with  ❤️ by Akalanka Daluwakgoda</p>
     </Container>
   )
 }

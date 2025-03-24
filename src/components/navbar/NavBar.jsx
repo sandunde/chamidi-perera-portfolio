@@ -3,7 +3,7 @@ import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { MoonStars, BrightnessHigh } from "react-bootstrap-icons";
 import Logo from "../../assets/logo.png";
 import BLogo from "../../assets/blackLogo.png";
-import Resume from "../../assets/Chamidi Perera - Resume.pdf";
+import Resume from "../../assets/Akalanka Resume.pdf";
 import { useTheme } from "../../context/ThemeContext";
 import "./NavBar.css";
 
@@ -41,7 +41,7 @@ const NavBar = () => {
               {darkTheme ? <BrightnessHigh size={"20px"} /> : <MoonStars size={"20px"} /> }
             </Nav.Link>
             <a href={Resume}
-              download="Chamidi Perera - Resume.pdf"
+              download="Akalanka Resume.pdf"
               style={{ textDecoration: "none" }}
             >
               <Button>
